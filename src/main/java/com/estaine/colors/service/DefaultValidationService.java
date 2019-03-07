@@ -9,6 +9,6 @@ public class DefaultValidationService implements ValidationService {
 
     @Override
     public String validate(String colors) {
-        return CORRECT_COLORS.equals(colors) ? "Congratulations! [A -> D], [Q -> F]" : "Incorrect, try again";
+        return CORRECT_COLORS.equals(colors) ? "О, какое чувство цвета! Верно! [ꖵ -> Е], [ꗑ -> Р]" : "Неверно. Попробуйте отодвинуться от монитора или прищуриться";
     }
 }

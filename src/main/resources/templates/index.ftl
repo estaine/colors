@@ -25,15 +25,15 @@
             var validationRequest = {colors: validationString};
 
             $.ajax({
-                        type: 'POST',
-                        url: "http://localhost:8319/validate",
-                        data: JSON.stringify(validationRequest),
-                        dataType: 'json',
-                        headers: {
-                            'Accept': 'application/json',
-                            'Content-Type': 'application/json'
-                        }
+                    type: 'POST',
+                    url: "http://192.168.88.42:8319/validate",
+                    data: JSON.stringify(validationRequest),
+                    dataType: 'json',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
                     }
+                }
             ).done(function (data) {
                 $('#validation-result').html(data.result);
             });
